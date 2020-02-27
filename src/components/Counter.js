@@ -28,10 +28,6 @@ class Counter extends React.Component {
           <button onClick={this.increase}>Increase</button>
           <button onClick={this.decrease}>Decrease</button>
         </div>
-        <div className="all-counters">
-          <button>Increase all</button>
-          <button>Decrease all</button>
-        </div>
       </div>
     )
   }
