@@ -1,5 +1,5 @@
 import React from 'react';
-import Counter from './components/Counter';
+import CounterList from './components/CounterList';
 import './App.css';
 
 class App extends React.Component {
@@ -7,13 +7,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Counter />
-        <Counter />
-        <Counter />
+        <CounterList />
       </div>
     )
   }
 }
+
 
 
 export default App;
