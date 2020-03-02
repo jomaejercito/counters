@@ -6,6 +6,8 @@ class CounterList extends React.Component {
     super(props)
     this.increaseCount = this.increaseCount.bind(this);
     this.decreaseCount = this.decreaseCount.bind(this);
+    // this.increaseAll = this.increaseAll.bind(this);
+    // this.decreaseAll = this.decreaseAll.bind(this);
 
     this.state = {
       counter1: 0,
@@ -23,6 +25,11 @@ class CounterList extends React.Component {
     const counter = `counter${counterNumber}`
     this.setState({ [counter]: this.state[counter] - 1 });
   }
+
+  // increaseAll() {}
+
+  // decreaseAll() {}
+
 
   render() {
     return (
