@@ -14,9 +14,33 @@ class CounterList extends React.Component {
   render() {
     return (
       <div className="counter-list">
-        <Counter />
-        <Counter />
-        <Counter />
+      
+        <Counter 
+          //counterNumber={1}
+          //count
+          //increase
+          //decrease
+        />
+
+        <Counter 
+          //counterNumber={2}
+          //count
+          //increase
+          //decrease
+        />
+
+        <Counter 
+          //counterNumber={3}
+          //count
+          //increase
+          //decrease
+        />
+
+      <div className="allIncreaseDecrease">
+        <button>Increase All</button>
+        <button>Decrease All</button>
+      </div>
+
       </div>
     )
   }
