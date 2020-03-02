@@ -26,7 +26,9 @@ class CounterList extends React.Component {
     this.setState({ [counter]: this.state[counter] - 1 });
   }
 
-  // increaseAll() {}
+  // increaseAll() {
+
+  // }
 
   // decreaseAll() {}
 
@@ -59,8 +61,8 @@ class CounterList extends React.Component {
       <br></br><br></br>
       
       <div className="allIncreaseDecrease">
-        <button>Increase All</button>
-        <button>Decrease All</button>
+        <button onClick={this.increaseAll}>Increase All</button>
+        <button onClick={this.decreaseAll}>Decrease All</button>
       </div>
 
       </div>
