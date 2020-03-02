@@ -30,16 +30,16 @@ class CounterList extends React.Component {
         />
 
         <Counter 
-          //counterNumber={2}
-          //count
-          //increase
+          counterNumber={2}
+          count={this.state.counter2}
+          onIncreaseClick={this.increaseCount}
           //decrease
         />
 
         <Counter 
-          //counterNumber={3}
-          //count
-          //increase
+          counterNumber={3}
+          count={this.state.counter3}
+          onIncreaseClick={this.increaseCount}
           //decrease
         />
       <br></br><br></br>
