@@ -4,18 +4,16 @@ class Counter extends React.Component {
   constructor(props) {
     super(props)
     this.onIncreaseClick = this.onIncreaseClick.bind(this);
-
+    this.onDecreaseClick = this.onDecreaseClick.bind(this);
   }
 
   onIncreaseClick(e) {
     this.props.onIncreaseClick(this.props.counterNumber)
   }
 
-  // decrease = () => {
-  //   this.setState({
-  //     counter: this.state.counter - 1
-  //   })
-  // }  
+  onDecreaseClick(e) {
+    this.props.onDecreaseClick(this.props.counterNumber)
+  }
 
   render() {
     return (
@@ -23,7 +21,7 @@ class Counter extends React.Component {
         <div className="individual-counter">
           <h1>{this.props.count}</h1>
           <button onClick={this.onIncreaseClick}>Increase</button>
-          <button onClick={this.decrease}>Decrease</button>
+          <button onClick={this.onDecreaseClick}>Decrease</button>
         </div>
       </div>
     )

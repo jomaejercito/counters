@@ -5,6 +5,7 @@ class CounterList extends React.Component {
   constructor(props) {
     super(props)
     this.increaseCount = this.increaseCount.bind(this);
+    this.decreaseCount = this.decreaseCount.bind(this);
 
     this.state = {
       counter1: 0,
@@ -18,6 +19,11 @@ class CounterList extends React.Component {
     this.setState({ [counter]: this.state[counter] + 1 });
   }
 
+  decreaseCount(counterNumber){
+    const counter = `counter${counterNumber}`
+    this.setState({ [counter]: this.state[counter] - 1 });
+  }
+
   render() {
     return (
       <div className="counter-list">
@@ -26,23 +32,25 @@ class CounterList extends React.Component {
           counterNumber={1}
           count={this.state.counter1}
           onIncreaseClick={this.increaseCount}
-          //decrease
+          onDecreaseClick={this.decreaseCount}
         />
 
         <Counter 
           counterNumber={2}
           count={this.state.counter2}
           onIncreaseClick={this.increaseCount}
-          //decrease
+          onDecreaseClick={this.decreaseCount}
         />
 
         <Counter 
           counterNumber={3}
           count={this.state.counter3}
           onIncreaseClick={this.increaseCount}
-          //decrease
+          onDecreaseClick={this.decreaseCount}
         />
+
       <br></br><br></br>
+      
       <div className="allIncreaseDecrease">
         <button>Increase All</button>
         <button>Decrease All</button>
