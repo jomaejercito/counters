@@ -7,7 +7,7 @@ class CounterList extends React.Component {
     this.increaseCount = this.increaseCount.bind(this);
     this.decreaseCount = this.decreaseCount.bind(this);
     this.increaseAll = this.increaseAll.bind(this);
-    // this.decreaseAll = this.decreaseAll.bind(this);
+    this.decreaseAll = this.decreaseAll.bind(this);
 
     this.state = {
       counter1: 0,
@@ -32,8 +32,11 @@ class CounterList extends React.Component {
     }
   }
 
-  // decreaseAll() {}
-
+  decreaseAll() {
+    for (let counterNumber = 0; counterNumber <= 3; counterNumber++) {
+      this.decreaseCount(counterNumber);
+    }
+  }
 
   render() {
     return (
